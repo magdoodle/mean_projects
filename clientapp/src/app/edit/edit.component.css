@@ -1,0 +1,27 @@
+*{
+  margin: 0px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+.addnew p{
+    color: magenta;
+}
+.addnew h4{
+    color: lightslategray;
+    font-weight: 100;
+    text-align: left;
+}
+.buttons input{
+    background-color: rgb(153, 255, 153);
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 12px;
+
+}
+.buttons button{
+    background-color: rgb(225, 213, 231);
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 12px;
+
+}

@@ -1,0 +1,19 @@
+
+<div class="details">
+  <fieldset>
+  <h3>Product Details</h3>
+  
+
+
+  <div class="info">
+    <h4>Name  {{oneproduct.name}}</h4>
+    <h4>Qty {{oneproduct.qty}}</h4>
+    <h4>Price ${{oneproduct.price}}</h4>
+    <button [routerLink]="['/home']">BACK</button>
+    <!-- <div class="delete"> -->
+    <button (click)="deleteProduct(oneproduct._id)">DELETE</button>
+    <!-- </div> -->
+  </div>
+  
+  </fieldset>
+</div>

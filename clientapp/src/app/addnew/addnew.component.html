@@ -1,0 +1,22 @@
+<div class="addnew">
+  <fieldset>
+    <h3>New Product</h3>
+
+    <div *ngIf="myErrors">
+      <p *ngIf="myErrors.name">{{ myErrors.name.message }}</p>
+      <p *ngIf="myErrors.qty">{{ myErrors.qty.message }}</p>
+      <p *ngIf="myErrors.price">{{ myErrors.price.message }}</p>
+    </div>
+    
+    <form (submit)="addProductForm()">
+      <h4>Name <input type="text" name="name" [(ngModel)]="newProduct.name"> </h4>
+      <h4>Qty <input type="number" name="qty" [(ngModel)]="newProduct.qty"></h4>
+      <h4>Price <input type="number" name="price" [(ngModel)]="newProduct.price"></h4>
+
+      <div class="buttons">
+        <button [routerLink]="['/home']">RESET</button>
+        <input type="submit" value="CREATE">
+      </div>
+    </form>
+  </fieldset>
+</div>

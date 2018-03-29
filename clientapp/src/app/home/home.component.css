@@ -1,0 +1,48 @@
+*{
+  margin: 0px;
+  padding: auto;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+.addproduct{
+    padding-left: 475px;
+    padding-bottom: 15px;
+}
+.addproduct button{
+    background-color: rgb(73, 95, 110);
+    border-radius: 3px;
+    color: whitesmoke;
+    font-size: 12px;
+}
+.container a{
+    color: blue;
+}
+.container table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.conatiner table, th, td{
+    border: 1px solid black;
+}
+.container th{
+    text-align: left;
+    background-color: silver;
+    color: whitesmoke;
+    font-size: 14px;
+}
+.conatiner tr{
+    font-size: 10px;
+}
+.container button{
+    background-color: rgb(73, 95, 110);
+    border-radius: 3px;
+    color: whitesmoke;
+    font-size: 9px;
+}
+
+.container tr {
+  background-color: white;
+}
+
+.container tr:nth-child(2n):hover, .container tr:hover {
+  background-color: grey;
+}

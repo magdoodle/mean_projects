@@ -1,0 +1,24 @@
+<div class="addnew">
+  <fieldset>
+    <h3>Update Product</h3>
+
+    <div *ngIf="myErrors">
+      <p *ngIf="myErrors.name">{{ myErrors.name.message }}</p>
+      <p *ngIf="myErrors.qty">{{ myErrors.qty.message }}</p>
+      <p *ngIf="myErrors.price">{{ myErrors.price.message }}</p>
+    </div>
+
+    <form (submit)="editProductForm()">
+      <h4>Name <input type="text" name="name" placeholder="{{oneprouct.name}}" [(ngModel)]="oneproduct.name"></h4>
+      <h4>Qty 
+      <input type="number" name="qty" placeholder="{{oneproduct.qty}}" [(ngModel)]="oneproduct.qty"></h4>
+      <h4>Price 
+      <input type="number" name="price" placeholder="{{oneproduct.price}}" [(ngModel)]="oneproduct.price"></h4>
+
+      <div class="buttons">
+        <button [routerLink]="['/home']">RESET</button>
+        <input type="submit" value="UPDATE">
+      </div>
+    </form>
+  </fieldset>
+</div>
